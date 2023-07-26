@@ -28,11 +28,26 @@ p{
 }
 
 .text-center{
-    text-align: center;
+    text-align: center; 
 }
  
 .text-primary{
     color: #93cb52;
+}
+
+.bg-primary{
+    background: #93cb52; /*primary color*/
+    color: #fff;
+}
+
+.bg-light{
+    background: #f4f4f4;
+    color: #333;
+}
+
+.bg-dark{
+    background: #333;
+    color: #fff;
 }
 
 .l-heading{
@@ -78,10 +93,10 @@ p{
     color: #fff;
 }
 
-.btn-light{
+/* .btn-light{
     background: #f4f4f4;
     color: #3d4c1f;
-}
+} */
 
 .list{
     margin: 0.5rem 0;
@@ -198,4 +213,36 @@ p{
 #safaris .tour img{
     width: 100%;
     height: auto;
+}
+
+/* Contact us form */
+.form-wrap{
+    max-width: 500px;
+    margin: 50px auto;
+    background: #fff;
+    color: #333;
+    line-height: 1.8;
+}
+
+.form-wrap .form-group{
+    margin-top: 15px;
+}
+
+.form-wrap .form-group label{
+ display: block;   
+}
+
+
+.form-wrap .form-group input,
+.form-wrap .form-group textarea{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.form-wrap #button{
+    margin-top: 20px;
+    cursor: pointer;
+    width: 100%;
 }
