@@ -13,7 +13,6 @@ body{
 
 a{
     text-decoration: none;
-
 }
 
 p{
@@ -21,6 +20,17 @@ p{
 }
 
 /* Utility Classes */
+.container{
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 2rem;
+    overflow: hidden;
+}
+
+.text-center{
+    text-align: center;
+}
+ 
 .text-primary{
     color: #93cb52;
 }
@@ -31,13 +41,27 @@ p{
     line-height: 1.1;
 }
 
+.m-heading{
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    line-height: 1.1;
+}
+
 .lead{
     font-size: 1.2rem;
     margin-bottom: 2rem;
 }
 
+.py-1{padding: 1.5rem 0;}
+.py-2{padding: 2rem 0;}
+.py-3{padding: 3rem 0;}
+
+.p-1{padding: 1.5rem;} /*padding class*/
+.p-2{padding: 2rem;}
+.p-3{padding: 3rem;}
+
 .btn{
-    display: inline;
+    display: inline-block;
     color: #fff;
     background: #3d4c1f;
     padding: 0.5rem 2rem;
@@ -54,6 +78,22 @@ p{
     color: #fff;
 }
 
+.btn-light{
+    background: #f4f4f4;
+    color: #3d4c1f;
+}
+
+.list{
+    margin: 0.5rem 0;
+    list-style:none;
+}
+
+.list li{
+    padding: 0.4rem 0;
+    border-bottom: #444 dotted 1px;
+}
+
+/* Navigation bar */
 #navbar{
     background: #333;
     color: #fff;
@@ -96,10 +136,66 @@ p{
     justify-content:center;
     align-items: center ;
     height: 100%;
-    width: 100%;
     padding: 0 2rem;
     position: absolute;   /*An Overlay*/
     top:60px;
     left: 0;
+    right: 0;
+    bottom: 0;
     background-color: rgba(0,0,0,.4);
+}
+
+/* First Section */
+#home-info{
+    background: #eee;
+}
+
+#home-info .items{
+    display: flex;
+    padding: 1rem;
+}
+
+#home-info .item{
+    flex: 1;
+    text-align: center;
+    padding: 1rem;
+    background: #eaeee8;
+    color: #333;
+    border: 1px solid #777;
+    margin-left: 1rem;
+    border-radius : 5px;
+}
+
+#home-info .items .item  img{
+    background: #283302d0;
+    width: 60%;
+    padding: 1rem;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+/* Second Section */
+#safaris{
+    background: #eee;
+}
+
+#safaris .tours{
+    display: flex;
+    margin-bottom: 1rem;
+}
+
+#safaris .tour{
+    flex: 1;
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+    color: #333;
+    border: 1px solid #777;
+    border-radius: 5px;
+    margin-left: 1rem;
+}
+
+#safaris .tour img{
+    width: 100%;
+    height: auto;
 }
