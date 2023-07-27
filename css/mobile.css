@@ -1,0 +1,47 @@
+
+#home-info .items{
+    display: block;
+    margin-bottom: 1.3rem;
+}
+
+#home-info .items .item{
+    width: 60%;
+    margin: 1.5rem auto;
+}
+
+#home-info .items .item  img{
+    width: 50%
+}
+
+#safaris .tours{
+    display: block;
+}
+
+#safaris .tours .tour{
+    margin: 2rem auto;
+    text-align: center;
+    width: 80%;
+}
+
+/* Smartphones */
+@media(max-width:500px) {
+    #navbar{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #navbar .logo{
+        margin-bottom: 0.5rem;
+        text-align: center;   
+    }
+
+    #navbar ul{
+        padding: 0.5rem;
+    }
+
+    #showcase .showcase-content{
+        top: 103px;
+    }
+
+    
+}    
