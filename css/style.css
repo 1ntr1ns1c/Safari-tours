@@ -199,11 +199,12 @@ p{
     margin-bottom: 1rem;
 }
 
-#safaris .tour{
+#safaris .tours .tour{
     flex: 1;
     padding: 1rem;
     justify-content: center;
     align-items: center;
+    text-align: center;
     color: #333;
     border: 1px solid #777;
     border-radius: 5px;
@@ -213,6 +214,10 @@ p{
 #safaris .tour img{
     width: 100%;
     height: auto;
+}
+
+#safaris .tours .tour #btn-info{
+    margin-top: auto
 }
 
 /* Contact us form */
