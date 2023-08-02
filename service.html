@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" media="screen and (max-width: 768px)" href="css/mobile.css" />
-    <title>Our Services</title>
+    <title>Safari Tours |Exciting Adventures</title>
 </head>
 <style>
     html,
@@ -18,21 +18,25 @@
         background: #667618;
         color: #fff;
         position: relative;
-        min-height: 100%;
+        min-height: 50vh;
     }
 
     .contain {
         display: flex;
         justify-content: center;
-        align-items: center;
-        flex: 1;
         text-align: center;
+        flex-wrap: wrap;
+        flex: 1;
+        width: 100%;
+
     }
 
     .service {
         border: 1px solid #333;
         padding: 1rem;
         margin: .75rem;
+        max-width: 30%;
+        margin-bottom: 1rem;
     }
 
     .service:hover {
@@ -40,21 +44,24 @@
         color: #fff;
     }
 
-    footer {
-        position: absolute;
-        bottom: 0;
-        width: 100%;
-    }
 
     @media (max-width: 768px) {
-       .contain {
-            display: block;
+        .service {
+            max-width: unset;
         }
-        footer{
+
+        .contain {
+            display: block;
+            width: auto;
+        }
+
+        footer {
             position: static;
         }
     }
+   
 </style>
+
 <body>
     <nav id="navbar">
         <h1 class="logo">
@@ -70,25 +77,43 @@
     </nav>
     <section class="services">
         <div class="container">
-            <h1 class="m-heading text-center p-1">Our Services</h1>
+            <h1 class="m-heading text-center p-1">Our <span class="text-primary">Services</span></h1>
             <div class="contain">
                 <div class="service">
-                    <h3 class="s-heading">service 1</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, natus at delectus nesciunt ipsa
-                        voluptas voluptates quis. Sunt labore placeat quidem, odit quo, adipisci cum expedita sint enim
-                        perspiciatis hic.</p>
+                    <h3 class="s-heading">Safari Expeditions</h3>
+                    <p>Organizing guided safari tours in various African national parks and wildlife reserves, offering
+                        opportunities to witness and photograph diverse wildlife, including the "Big Five" (lion,
+                        elephant, buffalo, leopard, and rhinoceros).</p>
                 </div>
                 <div class="service">
-                    <h3 class="s-heading">service 2</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, natus at delectus nesciunt ipsa
-                        voluptas voluptates quis. Sunt labore placeat quidem, odit quo, adipisci cum expedita sint enim
-                        perspiciatis hic.</p>
+                    <h3 class="s-heading">Cultural Immersion Tours</h3>
+                    <p>Arranging immersive experiences with local communities to learn about their traditions, customs,
+                        and history. This might involve village visits, traditional dances, and interactions with local
+                        artisans. e.g Maasai Culture</p>
                 </div>
                 <div class="service">
-                    <h3 class="s-heading">service 3</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, natus at delectus nesciunt ipsa
-                        voluptas voluptates quis. Sunt labore placeat quidem, odit quo, adipisci cum expedita sint enim
-                        perspiciatis hic.</p>
+                    <h3 class="s-heading">Mountain Trekking Adventures</h3>
+                    <p>Offering guided treks to iconic African peaks like Mount Kilimanjaro in Tanzania or Mount Kenya
+                        in Kenya, providing challenging and rewarding experiences for outdoor enthusiasts.</p>
+                </div>
+                <div class="service">
+                    <h3 class="s-heading">Beach Retreats</h3>
+                    <p> Relaxing getaways to Africa's stunning coastal destinations, where travelers can unwind on
+                        pristine beaches, indulge in water sports like snorkeling and scuba diving, and experience the
+                        vibrant coastal culture, cuisine, and nightlife</p>
+                </div>
+                <div class="service">
+                    <h3 class="s-heading">Photographic Tours</h3>
+                    <p> Specialized tours for photography enthusiasts, led by experienced guides who understand the art
+                        of capturing wildlife and landscapes. Participants receive photography tips, access to prime
+                        shooting locations, and the chance to document Africa's scenic physical features such as the
+                        Rift Valley and its escarpments.</p>
+                </div>
+                <div class="service">
+                    <h3 class="s-heading">Cruise and River Safaris</h3>
+                    <p>Unique journeys along Africa's waterways, such as the Nile River or Chobe River. Travelers can
+                        spot abundant wildlife along riverbanks, take in scenic landscapes, and enjoy a tranquil safari
+                        experience from the comfort of a boat or cruise vessel.</p>
                 </div>
             </div>
         </div>

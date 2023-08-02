@@ -8,7 +8,7 @@
 
 body{
     font-family:'Roboto', sans-serif;
-    line-height: 1,4;
+    line-height: 1.4;
 }
 
 a{
@@ -60,6 +60,10 @@ p{
     font-size: 2rem;
     margin-bottom: 0.5rem;
     line-height: 1.1;
+}
+
+.s-heading{
+    font-size: 1.5rem;
 }
 
 .lead{
@@ -250,4 +254,31 @@ p{
     margin-top: 20px;
     cursor: pointer;
     width: 100%;
+}
+
+#about-info{
+    background: #333 url(../img/jeep1.jpg) no-repeat center center/cover;
+    height: 100vh;
+    color: #fff;
+}
+
+#about-info #about{
+    display: flex;
+    flex-direction: column;
+    text-align: center ;
+    justify-content:center;
+    align-items: center ;
+    height: 100%;
+    padding: 0 2rem;
+    position: absolute;   /*An Overlay*/
+    top:66px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,.4);
+}
+
+#about-info #about .info-right{
+    display: flex;
+    width: 50%;
 }
