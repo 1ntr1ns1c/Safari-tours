@@ -68,3 +68,11 @@ const validateInputs = () => {
         setSuccess(phone);
     }
 } 
+
+const submitBtn= document.getElementById("button");
+
+submitBtn.addEventListener("click", function(event){
+    event.preventDefault;
+     
+    alert('Form Submitted')
+})
