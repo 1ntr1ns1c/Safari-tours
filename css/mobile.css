@@ -21,6 +21,27 @@
     text-align: center;
     width: 80%;
 }
+/* About Page */
+
+#about-info #about {
+    display: block;
+}
+
+#about-info #about .info-right{
+    display: block;
+    width: unset;
+    text-align: center;
+    overflow: hidden;
+}
+
+#about-info #about .info-right .missions .vision{
+    display: none;
+}
+
+#testimonials .testimonies{
+    display: block;
+    width: 100%;
+}
 
 /* Smartphones */
 @media(max-width:500px) {
@@ -39,8 +60,24 @@
     }
 
     #showcase .showcase-content{
-        top: 103px;
+        top: 110px;
     }
 
+    #about-info #about{
+        top: 112px;
+        overflow: hidden;
+    }
+    #about-info #about .info-right .missions{
+        display: none;
+    }
+
+    #testimonials .testimonies .testimonial {
+        display: block;
+    }
+
+    #testimonials .testimonies .testimonial img{
+        display: block;
+        margin: auto;
+    }
     
 }    

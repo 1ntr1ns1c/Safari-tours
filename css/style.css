@@ -1,284 +1,339 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url("https://fonts.googleapis.com/css?family=Roboto");
 
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-body{
-    font-family:'Roboto', sans-serif;
-    line-height: 1.4;
+body {
+  font-family: "Roboto", sans-serif;
+  line-height: 1.4;
 }
 
-a{
-    text-decoration: none;
+a {
+  text-decoration: none;
 }
 
-p{
-    margin: 0.75rem 0;
+p {
+  margin: 0.75rem 0;
 }
 
 /* Utility Classes */
-.container{
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 0 2rem;
+  overflow: hidden;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-primary {
+  color: #93cb52;
+}
+
+.bg-primary {
+  background: #93cb52; /*primary color*/
+  color: #fff;
+}
+
+.bg-light {
+  background: #f4f4f4;
+  color: #333;
+}
+
+.bg-dark {
+  background: #333;
+  color: #fff;
+}
+
+.l-heading {
+  font-size: 4rem;
+  margin-bottom: 0.5rem;
+  line-height: 1.1;
+}
+
+.m-heading {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  line-height: 1.1;
+}
+
+.s-heading {
+  font-size: 1.5rem;
+}
+
+.lead {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.py-1 {
+  padding: 1.5rem 0;
+}
+.py-2 {
+  padding: 2rem 0;
+}
+.py-3 {
+  padding: 3rem 0;
+}
+
+.p-1 {
+  padding: 1.5rem;
+} /*padding class*/
+.p-2 {
+  padding: 2rem;
+}
+.p-3 {
+  padding: 3rem;
+}
+
+.btn {
+  display: inline-block;
+  color: #fff;
+  background: #3d4c1f;
+  padding: 0.5rem 2rem;
+  border: none;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  background: #557153;
+}
+
+.btn-dark {
+  background: #333;
+  color: #fff;
+}
+
+
+.list {
+  margin: 0.5rem 0;
+  list-style: none;
+}
+
+.list li {
+  padding: 0.4rem 0;
+  border-bottom: #444 dotted 1px;
+}
+
+/* Navigation bar */
+#navbar {
+  background: #333;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+  padding: 1rem;
+  top: 0;
+  z-index: 1;
+}
+
+#navbar ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+#navbar ul li a {
+  color: #fff;
+  padding: 0.75rem;
+  margin: 0 0.25rem;
+}
+
+#navbar ul li a:hover {
+  background: #93cb52;
+  border-radius: 5px;
+}
+
+/* Showcase */
+#showcase {
+  background: #333 url(../img/jeepsunset.jpg) no-repeat center center/cover;
+  height: 100vh;
+  color: #fff;
+}
+
+#showcase .showcase-content {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 0 2rem;
+  position: absolute; /*An Overlay*/
+  top: 65px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* First Section */
+#home-info {
+  background: #eee;
+}
+
+#home-info .items {
+  display: flex;
+  padding: 1rem;
+}
+
+#home-info .item {
+  flex: 1;
+  text-align: center;
+  padding: 1rem;
+  background: #eaeee8;
+  color: #333;
+  border: 1px solid #777;
+  margin-left: 1rem;
+  border-radius: 5px;
+}
+
+#home-info .items .item img {
+  background: #283302d0;
+  width: 60%;
+  padding: 1rem;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+/* Second Section */
+#safaris {
+  background: #eee;
+}
+
+#safaris .tours {
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+#safaris .tours .tour {
+  flex: 1;
+  padding: 1rem;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #333;
+  border: 1px solid #777;
+  border-radius: 5px;
+  margin-left: 1rem;
+}
+
+#safaris .tour img {
+  width: 100%;
+  height: auto;
+}
+
+#safaris .tours .tour #btn-info {
+  margin-top: auto;
+}
+
+/* Contact us form */
+.form-wrap {
+  max-width: 500px;
+  margin: 50px auto;
+  background: #fff;
+  color: #333;
+  line-height: 1.8;
+}
+
+.form-wrap .form-group {
+  margin-top: 15px;
+}
+
+.form-wrap .form-group label {
+  display: block;
+}
+
+.form-wrap .form-group input,
+.form-wrap .form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.form-wrap #button {
+  margin-top: 20px;
+  cursor: pointer;
+  width: 100%;
+}
+
+/* About Page */
+#about-info {
+  background: #333 url(../img/jeep1.jpg) no-repeat center center/cover;
+  height: 100vh;
+  color: #fff;
+}
+
+#about-info #about {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content:center;
+  align-items: center ;
+  height: 100%;
+  padding: 0 2rem;
+  position: absolute; /*An Overlay*/
+  top: 66px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+#about-info #about .info-right, .info-left{
     max-width: 1100px;
-    margin: auto;
+    margin: .5rem auto;
     padding: 0 2rem;
     overflow: hidden;
 }
 
-.text-center{
-    text-align: center; 
-}
- 
-.text-primary{
-    color: #93cb52;
+#about-info #about .info-right {
+  display: flex;
+  width: 100%;
 }
 
-.bg-primary{
-    background: #93cb52; /*primary color*/
-    color: #fff;
-}
-
-.bg-light{
-    background: #f4f4f4;
-    color: #333;
-}
-
-.bg-dark{
-    background: #333;
-    color: #fff;
-}
-
-.l-heading{
-    font-size: 4rem;
-    margin-bottom: 0.5rem;
-    line-height: 1.1;
-}
-
-.m-heading{
-    font-size: 2rem;
-    margin-bottom: 0.5rem;
-    line-height: 1.1;
-}
-
-.s-heading{
-    font-size: 1.5rem;
-}
-
-.lead{
-    font-size: 1.2rem;
-    margin-bottom: 2rem;
-}
-
-.py-1{padding: 1.5rem 0;}
-.py-2{padding: 2rem 0;}
-.py-3{padding: 3rem 0;}
-
-.p-1{padding: 1.5rem;} /*padding class*/
-.p-2{padding: 2rem;}
-.p-3{padding: 3rem;}
-
-.btn{
-    display: inline-block;
-    color: #fff;
-    background: #3d4c1f;
-    padding: 0.5rem 2rem;
-    border: none;
-    border-radius: 5px;
-}
-
-.btn:hover{
-    background: #557153;
-}
-
-.btn-dark{
-    background: #333;
-    color: #fff;
-}
-
-/* .btn-light{
-    background: #f4f4f4;
-    color: #3d4c1f;
-} */
-
-.list{
-    margin: 0.5rem 0;
-    list-style:none;
-}
-
-.list li{
-    padding: 0.4rem 0;
-    border-bottom: #444 dotted 1px;
-}
-
-/* Navigation bar */
-#navbar{
-    background: #333;
-    color: #fff;
-    display: flex  ;
-    justify-content: space-between;
-    position: sticky;
-    padding: 1rem;
-    top:0;
-    z-index: 1;
-}
-
-#navbar ul{
-    display: flex;
-    align-items: center;
-    list-style: none;
-}
-
-#navbar ul li a {
-    color: #fff;
-    padding: 0.75rem;
-    margin: 0 0.25rem;
-}
-
-#navbar ul li a:hover{
-    background: #93cb52;
-    border-radius: 5px;
-}
-
-/* Showcase */
-#showcase{
-    background: #333 url(../img/jeepsunset.jpg) no-repeat center center/cover;
-    height: 100vh;
-    color: #fff;
-}
-
-#showcase .showcase-content{
-    display: flex;
-    flex-direction: column;
-    text-align: center ;
-    justify-content:center;
-    align-items: center ;
-    height: 100%;
-    padding: 0 2rem;
-    position: absolute;   /*An Overlay*/
-    top:60px;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0,0,0,.4);
-}
-
-/* First Section */
-#home-info{
-    background: #eee;
-}
-
-#home-info .items{
-    display: flex;
-    padding: 1rem;
-}
-
-#home-info .item{
-    flex: 1;
+#about-info #about p{
+    max-width: 100%;
     text-align: center;
-    padding: 1rem;
-    background: #eaeee8;
-    color: #333;
-    border: 1px solid #777;
-    margin-left: 1rem;
-    border-radius : 5px;
 }
 
-#home-info .items .item  img{
-    background: #283302d0;
-    width: 60%;
-    padding: 1rem;
-    border-radius: 50%;
-    margin-bottom: 1rem;
+#testimonials .testimonies {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  margin: auto;
 }
 
-/* Second Section */
-#safaris{
-    background: #eee;
+#testimonials .testimonies .testimonial {
+  display: flex;
+  padding: 20px;
+  margin-bottom: 40px;
+  border-radius: 10px;
 }
 
-#safaris .tours{
-    display: flex;
-    margin-bottom: 1rem;
+#testimonials .testimonies .testimonial img {
+  display: inline-block;
+  width: 100px;
+  border-radius: 50%;
+  margin-right: 20px;
 }
 
-#safaris .tours .tour{
-    flex: 1;
-    padding: 1rem;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: #333;
-    border: 1px solid #777;
-    border-radius: 5px;
-    margin-left: 1rem;
-}
-
-#safaris .tour img{
-    width: 100%;
-    height: auto;
-}
-
-#safaris .tours .tour #btn-info{
-    margin-top: auto
-}
-
-/* Contact us form */
-.form-wrap{
-    max-width: 500px;
-    margin: 50px auto;
-    background: #fff;
-    color: #333;
-    line-height: 1.8;
-}
-
-.form-wrap .form-group{
-    margin-top: 15px;
-}
-
-.form-wrap .form-group label{
- display: block;   
+#main-footer .container .socials ul li:hover{
+    background-color: #93cb52;
+    border-radius: 20px
 }
 
 
-.form-wrap .form-group input,
-.form-wrap .form-group textarea{
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-}
-
-.form-wrap #button{
-    margin-top: 20px;
-    cursor: pointer;
-    width: 100%;
-}
-
-#about-info{
-    background: #333 url(../img/jeep1.jpg) no-repeat center center/cover;
-    height: 100vh;
-    color: #fff;
-}
-
-#about-info #about{
-    display: flex;
-    flex-direction: column;
-    text-align: center ;
-    justify-content:center;
-    align-items: center ;
-    height: 100%;
-    padding: 0 2rem;
-    position: absolute;   /*An Overlay*/
-    top:66px;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0,0,0,.4);
-}
-
-#about-info #about .info-right{
-    display: flex;
-    width: 50%;
+#main-footer .container .socials ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 0.5rem 0.75rem;
+  text-decoration: none;
 }
