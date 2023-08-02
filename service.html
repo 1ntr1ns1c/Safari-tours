@@ -1,11 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" media="screen and (max-width: 768px)" href="css/mobile.css" />
     <title>Our Services</title>
 </head>
+<style>
+    html,
+    body {
+        height: 100%;
+    }
+
+    body {
+        background: #667618;
+        color: #fff;
+        position: relative;
+        min-height: 100%;
+    }
+
+    .contain {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex: 1;
+        text-align: center;
+    }
+
+    .service {
+        border: 1px solid #333;
+        padding: 1rem;
+        margin: .75rem;
+    }
+
+    .service:hover {
+        background: #273a02;
+        color: #fff;
+    }
+
+    footer {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+    }
+
+    @media (max-width: 768px) {
+       .contain {
+            display: block;
+        }
+        footer{
+            position: static;
+        }
+    }
+</style>
 <body>
-    <h1>It's being worked on at the moment...</h1>
+    <nav id="navbar">
+        <h1 class="logo">
+            <span class="text-primary"><i class="fa-solid fa-mountain-sun"></i> Safari</span>
+            Tours
+        </h1>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="service.html">Services</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <section class="services">
+        <div class="container">
+            <h1 class="m-heading text-center p-1">Our Services</h1>
+            <div class="contain">
+                <div class="service">
+                    <h3 class="s-heading">service 1</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, natus at delectus nesciunt ipsa
+                        voluptas voluptates quis. Sunt labore placeat quidem, odit quo, adipisci cum expedita sint enim
+                        perspiciatis hic.</p>
+                </div>
+                <div class="service">
+                    <h3 class="s-heading">service 2</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, natus at delectus nesciunt ipsa
+                        voluptas voluptates quis. Sunt labore placeat quidem, odit quo, adipisci cum expedita sint enim
+                        perspiciatis hic.</p>
+                </div>
+                <div class="service">
+                    <h3 class="s-heading">service 3</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, natus at delectus nesciunt ipsa
+                        voluptas voluptates quis. Sunt labore placeat quidem, odit quo, adipisci cum expedita sint enim
+                        perspiciatis hic.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer id="main-footer" class="bg-dark text-center py-1">
+        <div class="container">
+            <p> &copy; 2023, Safari Tours, All Rights Reserved
+            </p>
+        </div>
+    </footer>
 </body>
+
 </html>
