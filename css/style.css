@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto");
+@import url('https://fonts.googleapis.com/css?family=Roboto');
 
 * {
   box-sizing: border-box;
@@ -7,7 +7,7 @@
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   line-height: 1.4;
 }
 
@@ -109,7 +109,6 @@ p {
   color: #fff;
 }
 
-
 .list {
   margin: 0.5rem 0;
   list-style: none;
@@ -152,7 +151,7 @@ p {
 /* Showcase */
 #showcase {
   background: #333 url(../img/jeepsunset.jpg) no-repeat center center/cover;
-  height: 100vh;
+  height: 100svh;
   color: #fff;
 }
 
@@ -274,8 +273,8 @@ p {
   display: flex;
   flex-direction: column;
   text-align: center;
-  justify-content:center;
-  align-items: center ;
+  justify-content: center;
+  align-items: center;
   height: 100%;
   padding: 0 2rem;
   position: absolute; /*An Overlay*/
@@ -286,11 +285,12 @@ p {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-#about-info #about .info-right, .info-left{
-    max-width: 1100px;
-    margin: .5rem auto;
-    padding: 0 2rem;
-    overflow: hidden;
+#about-info #about .info-right,
+.info-left {
+  max-width: 1100px;
+  margin: 0.5rem auto;
+  padding: 0 2rem;
+  overflow: hidden;
 }
 
 #about-info #about .info-right {
@@ -298,9 +298,9 @@ p {
   width: 100%;
 }
 
-#about-info #about p{
-    max-width: 100%;
-    text-align: center;
+#about-info #about p {
+  max-width: 100%;
+  text-align: center;
 }
 
 #testimonials .testimonies {
@@ -325,11 +325,10 @@ p {
   margin-right: 20px;
 }
 
-#main-footer .container .socials ul li:hover{
-    background-color: #93cb52;
-    border-radius: 20px
+#main-footer .container .socials ul li:hover {
+  background-color: #93cb52;
+  border-radius: 20px;
 }
-
 
 #main-footer .container .socials ul li {
   list-style: none;
