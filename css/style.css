@@ -202,7 +202,9 @@ p {
 
 /* Second Section */
 #safaris {
-  background: #eee;
+  background: grey;
+  color:#fff;
+
 }
 
 #safaris .tours {
@@ -216,7 +218,7 @@ p {
   justify-content: center;
   align-items: center;
   text-align: center;
-  color: #333;
+  color: #eee;
   border: 1px solid #777;
   border-radius: 5px;
   margin-left: 1rem;
